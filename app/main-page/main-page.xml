@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="TicTacToe Greens" icon="res://icon" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <GridLayout columns="*" rows="auto,auto,auto" id="main">
+        <StackLayout col="0" row="0" id="header">
+            <Label text="greens" class="top-text"/>
+            <Label text="Tic Tac Toe" class="name-text"/>
+        </StackLayout>
+
+        <GridLayout columns="*,*,*" rows="*,*,*" col="0" row="1" id="board">
+            <Image col="0" row="0" tap="btnsClick" btnsid="0" class="btns" id="btns0" src="" stretch="fill" />
+            <Image col="1" row="0" tap="btnsClick" btnsid="1" class="btns" id="btns1" src="" stretch="fill" />
+            <Image col="2" row="0" tap="btnsClick" btnsid="2" class="btns" id="btns2" src="" stretch="fill" />
+
+            <Image col="0" row="1" tap="btnsClick" btnsid="3" class="btns" id="btns3" src="" stretch="fill" />
+            <Image col="1" row="1" tap="btnsClick" btnsid="4" class="btns" id="btns4" src="" stretch="fill" />
+            <Image col="2" row="1" tap="btnsClick" btnsid="5" class="btns" id="btns5" src="" stretch="fill" />
+
+            <Image col="0" row="2" tap="btnsClick" btnsid="6" class="btns" id="btns6" src="" stretch="fill" />
+            <Image col="1" row="2" tap="btnsClick" btnsid="7" class="btns" id="btns7" src="" stretch="fill" />
+            <Image col="2" row="2" tap="btnsClick" btnsid="8" class="btns" id="btns8" src="" stretch="fill" />
+        </GridLayout>
+
+        <StackLayout col="0" row="2">
+            <Button text="Restart" tap="restartGame" id="restart"/>
+        </StackLayout>
+    </GridLayout>
+</Page>

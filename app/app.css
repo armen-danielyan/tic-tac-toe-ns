@@ -1,0 +1,57 @@
+﻿.page {
+    background-image: ~/images/bgr.png;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.action-bar {
+    color: #ffffff;
+    background-color: rgba(0,0,0,192);
+}
+
+#header {
+    margin: 0 20px;
+}
+
+.top-text {
+    font-size: 16px;
+    color: rgb(232,255,0);
+    text-align: right;
+}
+
+.name-text {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: "GochiHand-Regular";
+    text-align: center;
+}
+
+#main {
+    margin:10px;
+}
+
+#board {
+    background-color: #76ad38;
+    margin: 10px 20px;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+.btns {
+
+}
+
+#restart {
+    border-color: #ffffff;
+    border-width: 3px;
+    /*border-radius: 100;*/
+    padding: 5px;
+    width: 50%;
+    color: rgb(232,255,0);
+    font-size: 32px;
+    font-family: "GochiHand-Regular";
+}
+
+@import 'nativescript-theme-core/css/core.light.css';
